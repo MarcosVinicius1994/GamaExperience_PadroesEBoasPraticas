@@ -149,3 +149,14 @@ background-color: yellow;
     background-color: pink;;
 }
 
+@media only screen and (max-width: 480px){
+    .content-flex{
+        display: flow-root;
+    }
+}
+
+@media only screen and (min-width: 1382px){
+    .container{
+        max-width: 60%;
+    }
+}
