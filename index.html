@@ -5,9 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS AULA 2</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/8ac0ce319f.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
 </head>
+
 <body>
-    <header class="container content-default bg-color--purple text-center">
+    <header id="top" class="container content-default bg-color--purple text-center">
         <div class="container-header content-default">
             <h1>
                 Iniciando com FlexBox
@@ -56,8 +60,8 @@
     </div>
     </div>
 
-    <div class="bg-color--pink container content-default text-center">
-        <h2>Display flex flex item</h2>
+    <div id="01"  class="bg-color--pink container content-default text-center">
+        <h2>Display flex | flex item</h2>
         <div class="content-flex content-default">
             <div class="content-flex--direction bg-color--purple flex-item--1">
                 <h3>
@@ -124,9 +128,65 @@
             </div>
         </div>
     </div>
+    <div id="02" class="container-paralax bg-img--version--1">
+        <div  class="container content-default  text-center content-align content-justify--center content-paralax--data">
+            <h1>Container with parallax</h1>
+            <p>text</p>
+        </div>
+    </div>
+    <div id="03" class="container-paralax bg-img--version--2">
+        <div class="container content-default  text-center content-align content-justify--center content-paralax--data">
+            <h1>Container with parallax</h1>
+            <p>text</p>
+        </div>
+
+    </div>
+
+
+    <div id="04" class="container-paralax bg-img--version--3">
+        <div class="container content-default  text-center content-align content-justify--center content-paralax--data">
+            <h1>Container with parallax</h1>
+            <p>text</p>
+        </div>
+    </div>
+
+    <div class="content-left--main">
+        <a  id ="proxima_pagina" href="exec_aula2.html">
+            <i class="fas fa-exclamation-triangle" style="color: red;">ATV2</i>
+        </a>
+        <a href="#01">
+            <i class="fas fa-rocket"></i>
+        </a>
+        <a href="#02">
+            <i class="fas fa-house-user"></i>
+        </a>
+        <a href="#03">
+            <i class="fas fa-share-square"></i>
+        </a>
+        <a href="#04">
+            <i class="fas fa-globe"></i>
+        </a>
+    </div>
+
+<div class="content-top--button">
+    <a href="#top">
+        <i class="fas fa-arrow-circle-up"></i>
+    </a>
+</div>
 
 
 
     <footer class="text-center"> Todos os direitos reservados</footer>
 </body>
+
+<script>
+    var piscando = document.getElementById('proxima_pagina');
+    var interval = window.setInterval(function () {
+        if (piscando.style.visibility == 'hidden') {
+            piscando.style.visibility = 'visible';
+        } else {
+            piscando.style.visibility = 'hidden';
+        }
+    }, 700);
+</script>
 </html>

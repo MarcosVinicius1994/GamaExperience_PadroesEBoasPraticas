@@ -34,7 +34,6 @@ justify-content: center;
     margin: 0 auto;
 }
 .container-paralax{
-    color: white;
     height: 100vh;
     display: flex;
     background-attachment: fixed;
@@ -42,15 +41,8 @@ justify-content: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
-.content-paralax--data{
-    color:white;
-    text-align: center;
-    display: flex;
-   flex-direction: column;
-   justify-content: center;
-}
 .bg-img--version--1{
-    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTW6POIBex00bjebHFCf_8cLvg2r94BOxJnFw&usqp=CAU');
+    background-image: url('');
 }
 .bg-img--version--2{
     background-image: url('');
@@ -60,7 +52,10 @@ justify-content: center;
     background-image: url('');
 
 }
+.bg-img--version--4{
+    background-image: url('');
 
+}
 .content-header{
 text-align: center;
 }
@@ -100,41 +95,6 @@ text-align: center;
 .content-align{
     align-items: flex-start;
 }
-.content-left--main{
-    position: fixed;
-    left: 0;
-    top: 30%;
-    padding: 15px 5px 5px 15px;
-    width: 80px;
-    height: 300px;
-    background: #9000c5;
-    border-radius: 15px;
-    display: grid;
-    z-index: 3;
-    box-shadow: 13px 7px 34px -12px rgba(0, 0, 0.75);
-    
-}
-.content-top--button{
-    position: fixed;
-    right: 10px;
-    bottom: 10px;
-    background-color: #9000c5;
-    border-radius: 100px;
-    padding: 10px;
-    padding-left: -10px;
-    width: 40px;
-    height: 42px;
-    text-align: center;
-    transition: 1s;
-}
-.content-top--button:hover{
-    background-color: #db5baa;
-    transition: 1s;
-}
-i{
-    font-size: 48px;
-    color:white;
-}
 .flex-item--1{
     flex: 1;
     margin: 2px;
@@ -169,4 +129,25 @@ background-color: yellow;
 }
 
 
+@media only screen and (max-width: 480px){
+    .content-flex{
+        display: flow-root;
+    }
+    .flex-wrap{
+        width: 100%;
+    }
+}
 
+
+@media only screen and (min-width: 600px){
+   .bg-color--blue{
+       background-color: #435740;
+       color: yellow;
+   }
+}
+
+@media only screen and (min-width: 1382px){
+    .container{
+        max-width: 60%;
+    }
+}

@@ -30,17 +30,27 @@ justify-content: center;
 }
 
 .container{
-    max-width: 80%;
+    max-width: 100%;
     margin: 0 auto;
 }
+.font--text{
+    font-size: large;
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 35px;
+    border-style: groove;
+    text-align: justify;
+
+}
 .container-paralax{
-    color: white;
-    height: 100vh;
+    height: 50vh;
     display: flex;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    border-style: groove;
+    border: gray;
 }
 .content-paralax--data{
     color:white;
@@ -50,17 +60,21 @@ justify-content: center;
    justify-content: center;
 }
 .bg-img--version--1{
-    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTW6POIBex00bjebHFCf_8cLvg2r94BOxJnFw&usqp=CAU');
+    background-image: url('img/primeira_imagem.jpeg');
+    border-style: groove;
 }
 .bg-img--version--2{
-    background-image: url('');
+    background-image: url('img/segunda_imagem.jpeg');
 
 }
 .bg-img--version--3{
     background-image: url('');
 
 }
+.bg-img--version--4{
+    background-image: url('');
 
+}
 .content-header{
 text-align: center;
 }
@@ -82,6 +96,7 @@ text-align: center;
     margin: 2px;
     width: 33%;
     justify-content: center;
+    border-style: groove;
 }
 .content-flex--reverse{
     flex-direction: row-reverse;
@@ -100,47 +115,12 @@ text-align: center;
 .content-align{
     align-items: flex-start;
 }
-.content-left--main{
-    position: fixed;
-    left: 0;
-    top: 30%;
-    padding: 15px 5px 5px 15px;
-    width: 80px;
-    height: 300px;
-    background: #9000c5;
-    border-radius: 15px;
-    display: grid;
-    z-index: 3;
-    box-shadow: 13px 7px 34px -12px rgba(0, 0, 0.75);
-    
-}
-.content-top--button{
-    position: fixed;
-    right: 10px;
-    bottom: 10px;
-    background-color: #9000c5;
-    border-radius: 100px;
-    padding: 10px;
-    padding-left: -10px;
-    width: 40px;
-    height: 42px;
-    text-align: center;
-    transition: 1s;
-}
-.content-top--button:hover{
-    background-color: #db5baa;
-    transition: 1s;
-}
-i{
-    font-size: 48px;
-    color:white;
-}
 .flex-item--1{
     flex: 1;
     margin: 2px;
 }
 .flex-item--2{
-    flex: 3;
+    flex: 2;
     margin: 2px;
 }
 .flex-item--3{
@@ -152,8 +132,8 @@ i{
 }
 
 .bg-color--purple{
-    background-color: #9000c5;
-    color:white;
+    /* background-color: #9000c5; */
+    /* color:white; */
 
 }
 .bg-color--blue{
@@ -167,6 +147,4 @@ background-color: yellow;
 .bg-color--pink{
     background-color: pink;;
 }
-
-
 
