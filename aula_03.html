@@ -16,19 +16,44 @@
 
     </div>
     <div class="container">
-        <h1>Text</h1>
-        <input type="text" placeholder="name" id="name">
+        <!-- <h1>Text</h1> -->
+        <!-- <input type="text" placeholder="name" id="name"> -->
 
-        <button onclick="ClickMe()">Clique Me:</button>
+        <!-- <button onclick="ClickMe()">Clique Me:</button> -->
     </div>
-    
+   <script>
+    const app = document.querySelector('#app');  
+    // function ClickMe (){
+        app.innerHTML =`<div class ="container">
+                            <div class="card">
+                                 <div class="card-body">
+                                    <div class="mb-3"> 
+                                        <label for ="exampleFor"class="form-label">Email </label>
+                                        <input type="name" class="form-control" id="name" placeholder="seu nome">
+                                    </div> 
+                                    <div class="mb-3"> 
+                                        <label for ="exampleForTextArea"class="form-label">Email </label>
+                                        <textarea  name ="text" class="form-control" id="age" rows="3" placeholder="sua idade"></textarea>
+                                    </div> 
+                                     <button type="submit" onClick=SecondScream() class="btn btn-primary"> Primary </button>
+                                </div>
+                             </div>
+                         </div>`;
+    // }
+
+   
+        function SecondScream(){
+            let userName = this.document.getElementById('name').value;
+            let ageUser =  this.document.getElementById('age').value;
+            app.innerHTML = `<div class="container"> 
+                        <div class="card"> 
+                            <div class="card-body">
+                                <h1>Meu nome é ${userName} e tenho ${ageUser}</h1>
+                                <h2>Obrigado!</h2>
+                            </div>
+                        </div>
+                    </div>`;
+        }
+</script> 
 </body>
-<script>
-    const app = document.querySelector('app');  
-    function ClickMe (){
-        app.innerHTML =`div class ="container">
-        <h1>Click</h1>
-        </div>`
-    }
-</script>
 </html>
